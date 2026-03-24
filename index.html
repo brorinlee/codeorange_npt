@@ -12,8 +12,9 @@ body {
     font-family: Courier New, monospace;
 }
 
+/* 접근 화면 */
 #access {
-    position: absolute;
+    position: fixed;
     top: 40%;
     width: 100%;
     text-align: center;
@@ -21,22 +22,40 @@ body {
     letter-spacing: 2px;
 }
 
+/* 문서 페이지 */
 #document {
     display: none;
+    background: #dcdcdc;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+/* 종이 영역 */
+.paper {
     background: #fdfbf7;
-    color: #111;
     width: 800px;
-    margin: 50px auto;
+    margin: auto;
     padding: 70px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    font-family: "Courier New", monospace;
+    color: #111;
     line-height: 1.8;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+}
+
+.rule {
+    margin-bottom: 18px;
+    text-indent: -20px;
+    padding-left: 20px;
 }
 
 .approved {
     position: absolute;
-    right: 200px;
-    bottom: 120px;
+    right: 60px;
+    bottom: 60px;
     font-size: 48px;
     color: rgba(180, 0, 0, 0.7);
     border: 5px solid rgba(180, 0, 0, 0.7);
@@ -66,37 +85,51 @@ ACCESSING SECURE DOCUMENT...
 </div>
 
 <div id="document">
+<div class="paper">
 
 문서번호: OC-NP-1406<br>
 등급: 제한 열람 / 코드 오렌지<br>
 배포등급: 현장 요원 전용<br><br>
 
-<h2 style="text-align:center;">
-뉴포트 거주 안전가옥 진입 및 유의 사항 안내 ─ 코드 오렌지
-</h2>
+<h2>뉴포트 거주 안전가옥 진입 및 유의 사항 안내 ─ 코드 오렌지</h2>
 
 주소지 : 30 River Court, Jersey City, NJ 07310 (No. 1406)<br><br>
 
-1. 로비에서 경비가 인사할 경우, 높은 확률로 날씨에 대해 질문을 한다. 이 경우 바깥의 실제 날씨와 관계 없이 반드시 "바람이 심하게 분다,"고 대답할 것.<br><br>
+<p>
+본 안내문은 코드 오렌지 발령에 따라 뉴포트 거주 구역 진입 시 필요한 절차를 설명한다.
+첫 방문 시 아래 절차를 순서대로 수행할 것.
+절차를 어길 경우 발생하는 상황에 대해 ■■는 책임지지 않는다.
+</p>
 
-2. 경비가 날씨에 대해 다시 묻는 경우는 드물다. 만약 다시 질문할 경우에도 같은 대답을 반복한다.<br><br>
+<div class="rule">1. 로비에서 경비가 인사할 경우, 높은 확률로 날씨에 대해 질문을 한다. 이 경우 바깥의 실제 날씨와 관계 없이 반드시 "바람이 심하게 분다,"고 대답할 것.</div>
 
-3. 엘리베이터에 탑승했을 때, 파트너 외에 인원이 한명이라도 더 있을 경우 목적 층을 누르기 전에 반드시 9층 버튼을 반복해서 두 번 누를 것. 그 이후 목적지 층을 누르도록 한다.<br><br>
+<div class="rule">2. 경비가 날씨에 대해 다시 묻는 경우는 드물다. 만약 다시 질문할 경우에도 같은 대답을 반복한다.</div>
 
-4. 9층 버튼을 두 번 누르는 동안, 동행인은 절대 엘리베이터의 거울을 보지 않는다.<br><br>
+<div class="rule">3. 엘리베이터에 탑승했을 때, 파트너 외에 인원이 한명이라도 더 있을 경우 목적 층을 누르기 전에 반드시 9층 버튼을 반복해서 두 번 누를 것. 그 이후 목적지 층을 누르도록 한다.</div>
 
-5. 엘리베이터 내부에서 다른 탑승인이 말을 걸어올 경우, 오늘은 날이 나빠 대답하고 싶은 기분이 아님을 표명한다.<br><br>
+<div class="rule">4. 9층 버튼을 두 번 누르는 동안, 동행인은 절대 엘리베이터의 거울을 보지 않는다.</div>
 
-6. 9층까지는 엘리베이터의 문이 열려도 문이 열려 있는 객실 안을 보지 않는다.<br><br>
+<div class="rule">5. 엘리베이터 내부에서 다른 탑승인이 말을 걸어올 경우, 오늘은 날이 나빠 대답하고 싶은 기분이 아님을 표명한다.</div>
 
-7. 자정 이후부터 동이 틀 때까지는 인접한 호실과 복도의 어떤 소리에도 반응하지 않는다.<br><br>
+<div class="rule">6. 9층까지는 엘리베이터의 문이 열려도 문이 열려 있는 객실 안을 보지 않는다.</div>
 
-8. ■■에 잠겨 있는 문은 9번 상황에서 열린다. 임의로 열려고 시도하지 않는다.<br><br>
+<div class="rule">7. 자정 이후부터 동이 틀 때까지는 인접한 호실과 복도의 어떤 소리에도 반응하지 않는다.</div>
 
-9. 위 규칙을 모두 정상적으로 수행했음에도 불구하고, 첫 방문 시 로비에서 만났던 경비원이 17층에 있는 경우 즉시 건물을 이탈할 것.<br><br>
+<div class="rule">8. ■■에 잠겨 있는 문은 9번 상황에서 열린다. 임의로 열려고 시도하지 않는다.</div>
+
+<div class="rule">9. 위 규칙을 모두 정상적으로 수행했음에도 불구하고, 첫 방문 시 로비에서 만났던 경비원이 17층에 있는 경우 즉시 건물을 이탈할 것.</div>
+
+<br><br>
+
+<p style="border-top:1px solid #999; padding-top:20px;">
+1, 2, 5는 첫 방문 시에만 해당된다. 해당 항목은 첫 방문 이후에는 발생하지 않으므로 수행할 필요가 없다.<br><br>
+위 유의 사항을 숙지한 뒤, Surf Avenue의 신문지 가판대 옆 노숙인에게 안내문을 재전달할 것.
+재전달 시 대화는 필요하지 않다.
+</p>
 
 <div class="approved">APPROVED</div>
 
+</div>
 </div>
 
 </body>
